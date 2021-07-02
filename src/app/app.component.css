@@ -1,0 +1,19 @@
+mat-list {
+  width: 100%;
+}
+
+mat-card {
+  width: 100%;
+}
+
+mat-list-item {
+  height: 100% !important;
+}
+
+mat-card.selected {
+  background-color: lightcyan;
+}
+
+mat-card.selectable {
+  cursor: pointer;
+}

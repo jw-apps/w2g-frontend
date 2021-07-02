@@ -3,6 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import {WebsocketService} from "./websocket.service";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatButtonModule} from "@angular/material/button";
+import {HttpClientModule} from "@angular/common/http";
+import {MatListModule} from "@angular/material/list";
+import {MatGridListModule} from "@angular/material/grid-list";
+import {MatCardModule} from "@angular/material/card";
 
 @NgModule({
   declarations: [
@@ -10,9 +17,15 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatButtonModule,
+    HttpClientModule,
+    MatListModule,
+    MatGridListModule,
+    MatCardModule
   ],
-  providers: [],
+  providers: [WebsocketService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

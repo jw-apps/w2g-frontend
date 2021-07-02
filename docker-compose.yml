@@ -1,0 +1,14 @@
+version: '3.7'
+
+services:
+  isamt-frontend:
+    container_name: w2g-frontend
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - '.:/app'
+      - '/app/node_modules/'
+      - './env.js:/app/src/env.js'
+    ports:
+      - 4200:4200
